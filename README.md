@@ -34,6 +34,14 @@ obfusacate() = obfuscate file code before compiling from temp folder / Syntax = 
 
 ## 💭 〢 ChangeLog
 ```diff
+v1.2.2 ⋮ 2022-07-01
++ fixed shitty import errors
++ created sections
+- removed seperate files and place all code into main.py
+
+v1.2.1 ⋮ 2022-07-01
++ small hotfix
+
 v1.1.3 ⋮ 2022-07-01
 + added loading antimation to obfusacate and curl commands
 + cleaned code

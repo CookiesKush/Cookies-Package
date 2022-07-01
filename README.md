@@ -22,14 +22,16 @@
 ## 🚀 〢 Usage
 
 ```sh
-Download or Gitclone this project
+pip install cookies_package
 ```
 
 
 ## 👤 〢 Author
 
  👤 **CookiesKush420**  
-- Website: http://cookiesservices.xyz/  - Twitter: [@Flashouttt](https://twitter.com/Flashouttt)  - GitHub: [@Callumgm](https://github.com/Callumgm)    
+- Website: http://cookiesservices.xyz/  
+- Twitter: [@Flashouttt](https://twitter.com/Flashouttt)  
+- GitHub: [@Callumgm](https://github.com/Callumgm)    
 ## 🤝 〢 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check

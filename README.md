@@ -19,6 +19,16 @@
 pip install cookies_package
 ```
 
+## 💭 〢 ChangeLog
+```diff
+v1.0.3 ⋮ 2022-07-01
++ added obfuscate code with random key
++ added download github code via curl
++ added loading animation
+
+v0.0.1 ⋮ 2022-05-23
++ initial release
+```
 
 ## 👤 〢 Author
 

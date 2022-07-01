@@ -27,7 +27,7 @@ setup(
   version=get_version(os.path.join(NAME, '__init__.py')),
   description='Python package for easier use',
   long_description_content_type='text/markdown',
-  long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
+  long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='REPO_URL',
   author='CookiesKush420',
   author_email='itstoxizblogs@gmail.com',

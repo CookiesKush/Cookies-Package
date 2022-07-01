@@ -1,6 +1,6 @@
 import os, ctypes, sys
-from util.loading_animation import *
-from util.obfuscate import *
+from loading_animation import *
+from obfuscate import *
 from time import sleep
 
 def clear():

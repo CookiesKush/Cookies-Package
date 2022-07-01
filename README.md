@@ -34,6 +34,9 @@ obfusacate() = obfuscate file code before compiling from temp folder / Syntax = 
 
 ## 💭 〢 ChangeLog
 ```diff
+v1.2.3 ⋮ 2022-07-01
++ fixed loading animation printing breaking
+
 v1.2.2 ⋮ 2022-07-01
 + fixed shitty import errors
 + created sections

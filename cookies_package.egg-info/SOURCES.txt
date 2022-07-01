@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+cookies_package/__init__.py
+cookies_package/main.py
+cookies_package.egg-info/PKG-INFO
+cookies_package.egg-info/SOURCES.txt
+cookies_package.egg-info/dependency_links.txt
+cookies_package.egg-info/requires.txt
+cookies_package.egg-info/top_level.txt
+cookies_package/util/loading_animation.py

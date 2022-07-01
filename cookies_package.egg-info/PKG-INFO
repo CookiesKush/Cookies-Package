@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: cookies-package
+Version: 1.0.0
+Summary: Python package for easier use
+Home-page: http://cookiesservices.xyz/
+Author: CookiesKush420
+Author-email: itstoxizblogs@gmail.com
+License: MIT
+Keywords: Easy,To,Use,Package
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Cookies Package
+<p align="center">
+  <a href="https://github.com/Callumgm/Github-View-Bot/graphs/commit-activity">
+    <img src="https://img.shields.io/badge/maintained-no-critical?style=flat-square" alt="Maintained No" />
+  </a>
+  <img src="https://img.shields.io/badge/python-3.9.7-blue?style=flat-square" alt="Python 3.9.7" />
+</p>
+
+## About 
+Decided to create a very simple yet very fast Github view bot (some requests dont get sent tho)
+
+## Features
+- Bot any raw link
+- Code is obfused to stop skidders :)
+
+## Install Instructions
+1. Download or Gitclone this project
+2. Make sure to ofc have `Python 3.9.7` downloaded & added to PATH on install
+3. Run `Setup and Run.bat` to installed the needed requirements & run the file after finshed
+4. Right link whatever u wanna make the bots view (image is best) and click `copy address` 
+[Preview](https://cdn.discordapp.com/attachments/974672407765876800/975769188612325416/unknown.png) 
+and paste into the view bot
+5. Choose the amount of threads u wish to use, then just wait :)
+
+## Change Log
+### 25/06/2022
+- Updated code to be more cleaner and faster
+
+
+## Contact
+Email - Callumgm20052005@gmail.com
+
+
+
+
+
+
+Change Log
+==========
+
+0.0.1 Beta (23/05/2022)
+-------------------
+- First Release
+
+1.0.0 (01/07/2022)
+-------------------
+- First Stable Release
+- Added obfuscate code with random key
+- Added download github code via curl
+- Added loading animation

@@ -1,0 +1,13 @@
+Change Log
+==========
+
+0.0.1 Beta (23/05/2022)
+-------------------
+- First Release
+
+1.0.0 (01/07/2022)
+-------------------
+- First Stable Release
+- Added obfuscate code with random key
+- Added download github code via curl
+- Added loading animation

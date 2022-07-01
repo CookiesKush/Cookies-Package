@@ -1,21 +1,3 @@
-Metadata-Version: 2.1
-Name: cookies-package
-Version: 1.0.3
-Summary: Python package for easier use
-Home-page: https://github.com/Callumgm/Cookies_Package
-Author: CookiesKush420
-Author-email: itstoxizblogs@gmail.com
-License: MIT
-Keywords: Easy,To,Use,Package
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Developers
-Classifier: Operating System :: Microsoft :: Windows :: Windows 10
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Topic :: Utilities
-Description-Content-Type: text/markdown
-License-File: LICENCE
-
 # Cookies Package
 <p align="center">
   <a href="https://github.com/Callumgm/Github-View-Bot/graphs/commit-activity">
@@ -51,18 +33,3 @@ Email - Callumgm20052005@gmail.com
 
 
 
-
-
-Change Log
-==========
-
-0.0.1 Beta (23/05/2022)
--------------------
-- First Release
-
-1.0.0 (01/07/2022)
--------------------
-- First Stable Release
-- Added obfuscate code with random key
-- Added download github code via curl
-- Added loading animation

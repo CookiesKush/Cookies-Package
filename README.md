@@ -18,16 +18,14 @@
 </p>
 
 > Python package for easier use  
-### 🏠 〢 [Homepage](%= projectHomepage %)
 
-    
 ## 🚀 〢 Usage
 
 ```sh
 Download or Gitclone this project
 ```
 
-  
+
 ## 👤 〢 Author
 
  👤 **CookiesKush420**  

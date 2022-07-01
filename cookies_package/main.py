@@ -1,5 +1,4 @@
 import os, ctypes, sys
-from Crypto.Cipher import AES
 from util.loading_animation import *
 from util.obfuscate import *
 from time import sleep

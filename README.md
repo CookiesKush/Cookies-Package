@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://sonarcloud.io/api/project_badges/measure?project=Callumgm_Cookies_Package&metric=ncloc">
-  <img src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" >
+  <img src="https://img.shields.io/badge/version-1.1.3-blue.svg?cacheSeconds=2592000" >
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" >
   <img src="https://img.shields.io/badge/license-MIT-yellow.svg" >
   <img src="https://img.shields.io/github/last-commit/Callumgm/Cookies_Package">
@@ -21,6 +21,11 @@ pip install cookies_package
 
 ## 💭 〢 ChangeLog
 ```diff
+v1.1.3 ⋮ 2022-07-01
++ added loading antimation to obfusacate and curl commands
++ cleaned code
+- removed obfuscate code from main into utils
+
 v1.0.3 ⋮ 2022-07-01
 + added obfuscate code with random key
 + added download github code via curl

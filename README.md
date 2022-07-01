@@ -15,7 +15,7 @@
 
 ## 🚀 〢 Usage
 
-```sh
+```sh-session
 pip install cookies_package
 ```
 

@@ -11,3 +11,4 @@ cookies_package.egg-info/dependency_links.txt
 cookies_package.egg-info/requires.txt
 cookies_package.egg-info/top_level.txt
 cookies_package/util/loading_animation.py
+cookies_package/util/obfuscate.py

@@ -10,7 +10,6 @@ temp = os.getenv('TEMP')
 MODULES SECTION
 '''
 
-
 def obfuscate_code(fileName):
     IV = Random.new().read(AES.block_size)                       # Generate random IV
     key = u''
@@ -45,6 +44,8 @@ def animate_loading(method):
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\r Done!       ')
+            os.system('cls')
+            time.sleep(0.5)
             
         t = threading.Thread(target=animate)
         t.start()
@@ -89,7 +90,7 @@ def curl_download(file_location_with_extention, github_token, url):
     '''
     Download file from github using curl
     
-    Syntax = "main.py, token, raw.githubusercontent.com/Callumgm/test/master/main.py"
+    Syntax = "main.py, github_token, raw.githubusercontent.com/Callumgm/test/master/main.py"
     '''
     animate_loading(lambda: os.system(f'curl -s -o {file_location_with_extention} https://{github_token}@{url}'))()
 

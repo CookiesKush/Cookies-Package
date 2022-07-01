@@ -21,17 +21,17 @@ pip install cookies_package
 
 ## ChangeLog
 ```diff
-v1.1.3 ⋮ 2022-07-01
+v1.1.3 | 2022-07-01
 + added loading antimation to obfusacate and curl commands
 + cleaned code
 - removed obfuscate code from main into utils
 
-v1.0.3 ⋮ 2022-07-01
+v1.0.3 | 2022-07-01
 + added obfuscate code with random key
 + added download github code via curl
 + added loading animation
 
-v0.0.1 ⋮ 2022-05-23
+v0.0.1 | 2022-05-23
 + initial release
 ```
 

@@ -1,35 +1,57 @@
-# Cookies Package
+<h1 align="center">Welcome to cookies package</h1>
+
 <p align="center">
-  <a href="https://github.com/Callumgm/Github-View-Bot/graphs/commit-activity">
-    <img src="https://img.shields.io/badge/maintained-no-critical?style=flat-square" alt="Maintained No" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=Callumgm_Cookies_Package&metric=ncloc">
+  <img src="https://img.shields.io/badge/version-1.1.3-blue.svg?cacheSeconds=2592000" >
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" >
+  <img src="https://img.shields.io/badge/license-MIT-yellow.svg" >
+  <img src="https://img.shields.io/github/last-commit/Callumgm/Cookies_Package">
+  <a href="https://twitter.com/Flashouttt" target="_blank">
+    <img src="https://img.shields.io/twitter/follow/Flashouttt.svg?style=social">
   </a>
-  <img src="https://img.shields.io/badge/python-3.9.7-blue?style=flat-square" alt="Python 3.9.7" />
 </p>
 
-## About 
-Decided to create a very simple yet very fast Github view bot (some requests dont get sent tho)
+> Python package for easier use of certin functions
 
-## Features
-- Bot any raw link
-- Code is obfused to stop skidders :)
+## Usage
 
-## Install Instructions
-1. Download or Gitclone this project
-2. Make sure to ofc have `Python 3.9.7` downloaded & added to PATH on install
-3. Run `Setup and Run.bat` to installed the needed requirements & run the file after finshed
-4. Right link whatever u wanna make the bots view (image is best) and click `copy address` 
-[Preview](https://cdn.discordapp.com/attachments/974672407765876800/975769188612325416/unknown.png) 
-and paste into the view bot
-5. Choose the amount of threads u wish to use, then just wait :)
+```sh-session
+pip install cookies_package
+```
 
-## Change Log
-### 25/06/2022
-- Updated code to be more cleaner and faster
+## ChangeLog
+```diff
+v1.1.3 ⋮ 2022-07-01
++ added loading antimation to obfusacate and curl commands
++ cleaned code
+- removed obfuscate code from main into utils
+
+v1.0.3 ⋮ 2022-07-01
++ added obfuscate code with random key
++ added download github code via curl
++ added loading animation
+
+v0.0.1 ⋮ 2022-05-23
++ initial release
+```
+
+## Author
+
+**CookiesKush420**  
+- Website: http://cookiesservices.xyz/  
+- Twitter: [@Flashouttt](https://twitter.com/Flashouttt)  
+- GitHub: [@Callumgm](https://github.com/Callumgm)    
 
 
-## Contact
-Email - Callumgm20052005@gmail.com
+## Contributing
+Contributions, issues and feature requests are welcome!<br />Feel free to check
+[issues page](https://github.com/Callumgm/Cookies_Package/issues).  
 
 
+## Show your support
+Give a star if this project helped you! 
 
 
+## License
+ Copyright © 2022
+[CookiesKush420](https://github.com/Callumgm).<br />  This project is [MIT](https://github.com/Callumgm/Cookies_Package/blob/master/LICENCE) licensed. 

@@ -29,7 +29,7 @@ slowPrint() = Print text letter by letter / Syntax = slowPrint("Hello world", 0.
 
 curl_download() = Download file from github private repo using curl / Syntax = curl_download("main.py", privateToken, "raw.githubusercontent.com/Callumgm/test/master/main.py")
 
-obfusacate() = obfuscate file code before compiling from temp folder / Syntax = obfusacate("main.py")
+obfusacate() = obfuscate file code before compiling from temp folder / Syntax = obfusacate("main")
 ```
 
 ## 💭 〢 ChangeLog

@@ -99,7 +99,7 @@ def obfusacate(fileName):
     '''
     obfuscate file code before compiling from temp folder
     
-    Syntax = "main.py"
+    Syntax = "main"
     '''
     animate_loading(lambda: obfuscate_code(fileName))()
 

@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: cookies-package
-Version: 1.4.5
+Version: 1.4.6
 Summary: Python package for easier use
 Home-page: https://github.com/Callumgm/Cookies_Package
 Author: CookiesKush420
 Author-email: itstoxizblogs@gmail.com
 License: MIT
 Keywords: Easy,To,Use,Package
+Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
 Classifier: Operating System :: Microsoft :: Windows :: Windows 10
@@ -16,3 +17,4 @@ Classifier: Topic :: Utilities
 License-File: LICENCE
 
 View description at https://github.com/Callumgm/Cookies_Package
+

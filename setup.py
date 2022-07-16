@@ -32,7 +32,7 @@ setup(
   author_email='itstoxizblogs@gmail.com',
   license='MIT',
   keywords=['Easy', 'To', 'Use', 'Package'],
-  install_requires=['animation'], # Add any needed packages here that your package will need to work
+  install_requires=['requests'], # Add any needed packages here that your package will need to work
   # see classifiers https://pypi.org/pypi?%3Aaction=list_classifiers
   classifiers=[
     'Development Status :: 5 - Production/Stable',

@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://sonarcloud.io/api/project_badges/measure?project=Callumgm_Cookies_Package&metric=ncloc">
-  <img src="https://img.shields.io/badge/version-1.4.5-blue.svg?cacheSeconds=2592000" >
+  <img src="https://img.shields.io/badge/version-1.4.6-blue.svg?cacheSeconds=2592000" >
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" >
   <img src="https://img.shields.io/badge/license-MIT-yellow.svg" >
   <img src="https://img.shields.io/github/last-commit/Callumgm/Cookies_Package">
@@ -36,7 +36,7 @@ obfusacate() = obfuscate file code before compiling / Syntax = obfusacate("C:\Us
 
 ## 💭 〢 ChangeLog
 ```diff
-v1.4.5 ⋮ 2022-07-16
+v1.4.6 ⋮ 2022-07-16
 + added minor change
 
 v1.3.3 ⋮ 2022-07-16

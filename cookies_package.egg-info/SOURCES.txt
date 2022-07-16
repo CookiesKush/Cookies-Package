@@ -1,6 +1,6 @@
 LICENCE
 MANIFEST.in
-README.txt
+README.md
 setup.py
 cookies_package/__init__.py
 cookies_package/main.py

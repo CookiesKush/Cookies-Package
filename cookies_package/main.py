@@ -84,7 +84,7 @@ def obfusacate(fileName:str):
     '''
     obfuscate file code before compiling
     
-    Syntax = "C:\Users\Dick\Desktop\main.py"
+    Syntax = "main.py"
     '''
     obfuscate_code(fileName)
 

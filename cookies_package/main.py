@@ -43,7 +43,7 @@ def clear():
     os.system('cls')
 
 
-def setTitle(str, creator):
+def setTitle(str:str, creator:str):
     '''
     Set console title with creator name
     
@@ -52,7 +52,7 @@ def setTitle(str, creator):
     ctypes.windll.kernel32.SetConsoleTitleW(f"{str} | {creator}")
 
 
-def slowPrint(str, speed):
+def slowPrint(str:str, speed:int):
     '''
     Print text letter by letter
     
@@ -62,7 +62,7 @@ def slowPrint(str, speed):
         sys.stdout.write(letter);sys.stdout.flush();sleep(speed)
 
 
-def curl_download_github(file_location_with_extention, github_token, url):
+def curl_download_github(file_location_with_extention:str, github_token:str, url:str):
     '''
     Download file from github using curl
     
@@ -71,7 +71,7 @@ def curl_download_github(file_location_with_extention, github_token, url):
     os.system(f'curl -s -o {file_location_with_extention} https://{github_token}@{url}')
 
 
-def curl_download(file_location_with_extention, url):
+def curl_download(file_location_with_extention:str, url:str):
     '''
     Download file using curl
     
@@ -80,7 +80,7 @@ def curl_download(file_location_with_extention, url):
     os.system(f'curl -s -o {file_location_with_extention} {url}')
 
 
-def obfusacate(fileName):
+def obfusacate(fileName:str):
     '''
     obfuscate file code before compiling
     

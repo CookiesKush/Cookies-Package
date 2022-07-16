@@ -1,4 +1,4 @@
-import os, ctypes, sys, base64, random
+import os, ctypes, sys, base64, random, shutil
 from Crypto.Cipher import AES
 from Crypto import Random
 from time import sleep
@@ -15,7 +15,7 @@ def obfuscate_code(fileName):
         for i in range(8):
             key = key + chr(random.randint(0x4E00, 0x9FA5))          # Generate random key
 
-        with open(f'{fileName}.py') as f:                    # Open file and fix imports
+        with open(f'{fileName}') as f:                    # Open file and fix imports
             _file = f.read()
             imports = ''
             input_file = _file.splitlines()
@@ -23,7 +23,7 @@ def obfuscate_code(fileName):
                 if i.startswith("import") or i.startswith("from"):
                     imports += i+';'
 
-        with open(f'{fileName}.py', "wb") as f:              # Write file with fixed imports & AES encrypted
+        with open(f'{fileName}', "wb") as f:              # Write file with fixed imports & AES encrypted
             encodedBytes = base64.b64encode(_file.encode())
             obfuscatedBytes = AES.new(key.encode(), AES.MODE_CFB, IV).encrypt(encodedBytes)
             f.write(f'from Crypto.Cipher import AES;{imports}exec(__import__(\'\\x62\\x61\\x73\\x65\\x36\\x34\').b64decode(AES.new({key.encode()}, AES.MODE_CFB, {IV}).decrypt({obfuscatedBytes})).decode())'.encode())

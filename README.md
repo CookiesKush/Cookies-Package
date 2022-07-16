@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://sonarcloud.io/api/project_badges/measure?project=Callumgm_Cookies_Package&metric=ncloc">
-  <img src="https://img.shields.io/badge/version-1.2.3-blue.svg?cacheSeconds=2592000" >
+  <img src="https://img.shields.io/badge/version-1.3.3-blue.svg?cacheSeconds=2592000" >
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" >
   <img src="https://img.shields.io/badge/license-MIT-yellow.svg" >
   <img src="https://img.shields.io/github/last-commit/Callumgm/Cookies_Package">
@@ -20,20 +20,27 @@ pip install cookies_package
 ```
 
 ## 📃 〢 Documentation
-```py
+```sh
 clear() = Clears the console / Syntax = clear()
 
 setTitle() = Set console title / Syntax = setTitle("Hello world", "CookiesKush420")
 
 slowPrint() = Print text letter by letter / Syntax = slowPrint("Hello world", 0.04)
 
-curl_download() = Download file from github private repo using curl / Syntax = curl_download("main.py", privateToken, "raw.githubusercontent.com/Callumgm/test/master/main.py")
+curl_download_github() = Download file from github private repo using curl / Syntax = curl_download_github("main.py", privateToken, "raw.githubusercontent.com/Callumgm/test/master/main.py")
 
-obfusacate() = obfuscate file code before compiling from temp folder / Syntax = obfusacate("main")
+curl_download() = Download file using curl / Syntax = curl_download("main.py", "URL_HERE")
+
+obfusacate() = obfuscate file code before compiling / Syntax = obfusacate("C:\Users\Callum\Desktop\My_Github_Shit\Cookies_Package", "main")
 ```
 
 ## 💭 〢 ChangeLog
 ```diff
+v1.3.3 ⋮ 2022-07-16
++ added normal curl download function
++ changed curl download via github name function
+- removed obfusacate function to find file only from temp folder
+
 v1.2.3 ⋮ 2022-07-01
 + fixed loading animation printing breaking
 

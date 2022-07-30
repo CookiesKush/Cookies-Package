@@ -36,6 +36,9 @@ obfusacate() = obfuscate file code before compiling / Syntax = obfusacate("C:\Us
 
 ## 💭 〢 ChangeLog
 ```diff
+v1.4.7 ⋮ 2022-07-30
++ added simple backdoor script
+
 v1.4.6 ⋮ 2022-07-16
 + added minor change
 

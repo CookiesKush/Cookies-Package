@@ -64,7 +64,7 @@ Syntax = obfusacate("main.py")
 
 ## 💭 〢 ChangeLog
 ```diff
-v1.5.0 ⋮ 2022-07-30
+v1.5.0 ⋮ 2022-08-30
 + cleaned up code and documentation
 - removed creator section from set title
 - removed backdoor script since it was broken

@@ -26,13 +26,13 @@ setup(
   packages=[NAME],
   version=get_version(os.path.join(NAME, '__init__.py')),
   description='Python package for easier use',
-  long_description="View description at https://github.com/Callumgm/Cookies_Package",
+  long_description="View documentaion at https://github.com/Callumgm/Cookies_Package",
   url='https://github.com/Callumgm/Cookies_Package',
   author='CookiesKush420',
   author_email='itstoxizblogs@gmail.com',
   license='MIT',
   keywords=['Easy', 'To', 'Use', 'Package'],
-  install_requires=['requests'], # Add any needed packages here that your package will need to work
+  install_requires=['requests', 'pycryptodome'], # Add any needed packages here that your package will need to work
   # see classifiers https://pypi.org/pypi?%3Aaction=list_classifiers
   classifiers=[
     'Development Status :: 5 - Production/Stable',
@@ -40,6 +40,8 @@ setup(
     'Operating System :: Microsoft :: Windows :: Windows 10',
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.7',
     'Topic :: Utilities'
   ]
 )

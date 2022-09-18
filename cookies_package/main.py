@@ -1,91 +1,122 @@
-import os, ctypes, sys, base64, random
-from Crypto.Cipher import AES
-from Crypto import Random
+
+# System Modules
+import os
+import ctypes
+import sys
+import base64
+import random
+import platform
+
 from time import sleep
 
 
-'''
-COMMANDS SECTION
-'''
+# Downloaded Modules
+from Crypto.Cipher import AES
+from Crypto import Random
+
 
 def clear():
     '''
-    Clear console
+        Set console title
+
+        Syntax:
+            :py:class:`clear()`
     '''
-    os.system('cls')
+    if platform.system() == 'Windows': 
+        os.system('cls')
 
-
-def setTitle(str:str):
-    '''
-    Set console title
-
-    str     - title to set
+    elif platform.system() == 'Linux' or platform.system() == 'Darwin':
+        os.system('clear')
     
-    Syntax = "Hello World"
+
+def setTitle(title:str):
     '''
-    ctypes.windll.kernel32.SetConsoleTitleW(f"{str}")
+        Set console title
 
+        Arguments:
+            title: str
 
-def slowPrint(str:str, speed:int):
+        Syntax:
+            :py:class:`setTitle("Hello, World")`
     '''
-    Print text letter by letter with a delay
+    ctypes.windll.kernel32.SetConsoleTitleW(f"{title}")
 
-    str     - text to print
-    speed   - delay between letters
-    
-    Syntax = "Hello World, 0.04"
+
+def slowPrint(text:str, speed:int):
     '''
-    for letter in str: sys.stdout.write(letter) ; sys.stdout.flush() ; sleep(speed)
+        Print text letter by letter with a delay
 
+        Arguments:
+            text    : str
+            speed   : int
 
-def curl_download_github(file:str, github_token:str, url:str):
+        Syntax:
+            :py:class:`slowPrint("Hello World", 0.04)`
     '''
-    Download file from github to system using curl
+    for letter in text: sys.stdout.write(letter) ; sys.stdout.flush() ; sleep(speed)
 
-    file    - path to download file to
-    url     - raw github url to download file from
-    
-    Syntax = "main.py, github_token, raw.githubusercontent.com/Callumgm/test/master/main.py"
+
+def curl_download_github(output:str, token:str, url:str):
     '''
+        Download file from github to system using curl
+
+        Arguments:
+            output  : str   - path to download file to
+            token   : str   - private github token
+            url     : str   - raw github url to download file from
+
+        Syntax:
+            :py:class:`curl_download_github("main.py", TOKEN, "raw.githubusercontent.com/Callumgm/test/master/main.py")`
+    '''
+
     if "https://" in url: url = url.replace("https://", "") # Remove https:// from url if found
 
-    os.system(f'curl -s -o {file} https://{github_token}@{url}')
+    os.system(f'curl -s -o {output} https://{token}@{url}')
 
 
-def curl_download(file:str, url:str):
+def curl_download(output:str, url:str):
     '''
-    Download file to system using curl
+        Download file to system using curl
 
-    file    - path to download file to
-    url     - url to download file from
-    
-    Syntax = "main.py, URL"
+        Arguments:
+            output  : str   - path to download file to
+            url     : str   - url to download file from
+
+        Syntax:
+            :py:class:`curl_download("main.py", url)`
     '''
-    os.system(f'curl -s -o {file} {url}')
+    os.system(f'curl -s -o {output} {url}')
 
 
 def obfusacate(file:str):
     '''
-    Obfuscate source code file
+        Obfuscate source code
 
-    file    - path to file to obfuscate
-    
-    Syntax = "main.py"
+        Arguments:
+            file    : str   - path to file to obfuscate
+            speed   : int
+
+        Syntax:
+            :py:class:`obfusacate("main.py")`
     '''
-    if file.endswith('.py'):                         # Check if file is a python file
-        IV  = Random.new().read(AES.block_size)          # Generate random IV
+    if file.endswith('.py'): 
+        # Initialise variables                        
+        IV  = Random.new().read(AES.block_size)
         key = u''
 
-        for i in range(8): key += chr(random.randint(0x4E00, 0x9FA5))  # Generate random key
+        # Generate random key
+        for i in range(8): key += chr(random.randint(0x4E00, 0x9FA5))  
 
-        with open(f'{file}') as f:                  # Open file and fix imports
+        # Open file and fix imports
+        with open(f'{file}') as f:                  
             _file = f.read()
             imports = ''
             input_file = _file.splitlines()
             for i in input_file:
                 if i.startswith("import") or i.startswith("from"): imports += i+';'
 
-        with open(f'{file}', "wb") as f:              # Write file with fixed imports & AES encrypted
+        # Write file with fixed imports & AES encrypted code
+        with open(f'{file}', "wb") as f:              
             encodedBytes = base64.b64encode(_file.encode())
             obfuscatedBytes = AES.new(key.encode(), AES.MODE_CFB, IV).encrypt(encodedBytes)
             f.write(f'from Crypto.Cipher import AES;{imports}exec(__import__(\'\\x62\\x61\\x73\\x65\\x36\\x34\').b64decode(AES.new({key.encode()}, AES.MODE_CFB, {IV}).decrypt({obfuscatedBytes})).decode())'.encode())

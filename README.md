@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://sonarcloud.io/api/project_badges/measure?project=Callumgm_Cookies_Package&metric=ncloc">
-  <img src="https://img.shields.io/badge/version-1.5.0-blue.svg?cacheSeconds=2592000" >
+  <img src="https://img.shields.io/badge/version-1.5.1-blue.svg?cacheSeconds=2592000" >
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" >
   <img src="https://img.shields.io/badge/license-MIT-yellow.svg" >
   <img src="https://img.shields.io/github/last-commit/Callumgm/Cookies_Package">
@@ -11,7 +11,7 @@
   </a>
 </p>
 
-> Python package for easier use of certin functions
+> Python package for easier use of certin functions that I personally use alot
 
 ## 🚀 〢 Usage
 
@@ -20,50 +20,74 @@ pip install cookies_package
 ```
 
 ## 📃 〢 Documentation
-```sh
-clear() 
 
-Clears the console
-Syntax = clear()
+```sh
+Clear console
+
+Syntax:
+    clear()
 ```
 
 ```sh
-setTitle()
-
 Set console title
-Syntax = setTitle("Hello world")
+
+Arguments:
+    title   : str
+
+Syntax:
+    setTitle("Hello, World")
 ```
 
 ```sh
-slowPrint()
+Print text letter by letter with a delay
 
-Print text letter by letter
-Syntax = slowPrint("Hello world", 0.04)
+Arguments:
+    text    : str
+    speed   : int
+
+Syntax:
+    slowPrint("Hello World", 0.04)
 ```
 
 ```sh
-curl_download_github()
+Download file from github to system using curl
 
-Download file from github private repo using curl
-Syntax = curl_download_github("main.py", privateToken, "raw.githubusercontent.com/test/test/master/test.py")
+Arguments:
+    output  : str   - path to download file to
+    token   : str   - private github token
+    url     : str   - raw github url to download file from
+
+Syntax:
+    curl_download_github("main.py", "TOKEN", "raw.githubusercontent.com/Callumgm/test/master/main.py")
 ```
 
 ```sh
-curl_download()
+Download file to system using curl
 
-Download file using curl
-Syntax = curl_download("main.py", "URL_HERE")
+Arguments:
+    output  : str   - path to download file to
+    url     : str   - url to download file from
+
+Syntax:
+    curl_download("main.py", url)
 ```
 
 ```sh
-obfusacate()
+Obfuscate src code
 
-obfuscate file code before compiling
-Syntax = obfusacate("main.py")
+Arguments:
+    file    : str   - path to file to obfuscate
+    speed   : int
+
+Syntax:
+    obfusacate("main.py")
 ```
 
 ## 💭 〢 ChangeLog
 ```diff
+v1.5.1 ⋮ 2022-09-18
++ more cleaning of code for easier reading/usage
+
 v1.5.0 ⋮ 2022-08-30
 + cleaned up code and documentation
 - removed creator section from set title

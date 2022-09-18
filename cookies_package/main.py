@@ -17,7 +17,7 @@ from Crypto import Random
 
 def clear():
     '''
-        Set console title
+        Clear console
 
         Syntax:
             :py:class:`clear()`
@@ -34,7 +34,7 @@ def setTitle(title:str):
         Set console title
 
         Arguments:
-            title: str
+            title   : str
 
         Syntax:
             :py:class:`setTitle("Hello, World")`

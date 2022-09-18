@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cookies-package
-Version: 1.5.0
+Version: 1.5.1
 Summary: Python package for easier use
 Home-page: https://github.com/Callumgm/Cookies_Package
 Author: CookiesKush420
@@ -13,8 +13,10 @@ Classifier: Intended Audience :: Developers
 Classifier: Operating System :: Microsoft :: Windows :: Windows 10
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
 Classifier: Topic :: Utilities
 License-File: LICENCE
 
-View description at https://github.com/Callumgm/Cookies_Package
+View documentaion at https://github.com/Callumgm/Cookies_Package
 
